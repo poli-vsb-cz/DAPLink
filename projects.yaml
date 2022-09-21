@@ -43,6 +43,11 @@ module:
         - records/hic_hal/k20dx.yaml
         - records/usb/usb-bulk.yaml
         - records/usb/usb-hid.yaml
+    hic_k22dx: &module_hic_k22dx
+        - records/rtos/rtos-cm3.yaml
+        - records/hic_hal/k22dx.yaml
+        - records/usb/usb-bulk.yaml
+        - records/usb/usb-hid.yaml
     hic_k26f: &module_hic_k26f
         - records/rtos/rtos-cm4.yaml
         - records/hic_hal/k26f.yaml
@@ -326,6 +331,10 @@ projects:
         - *module_if
         - *module_hic_k20dx
         - records/board/xDot-L151.yaml
+    k22dx_frdmk22dx_if:
+        - *module_if
+        - *module_hic_k22dx
+        - records/board/frdmk22dx.yaml
     k26f_frdmk32w042_if:
         - *module_if
         - *module_hic_k26f
